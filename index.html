@@ -1,18 +1,38 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/skeleton.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 </head>
-
 <body>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+    <div id="contenido">
+        <div class="container">
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p> ¡Hola Mundo! Soy Viviana. ¡Este es mi sitio web! </p> 
+            <h1>Local Storage</h1>
+            <div class="row">
+                <div class="six columns">
+                    <label for="tweet">Tweet:</label>
+                    <form action="#" id="formulario">
+                            <label for="tweet"></label>
+                            <textarea id="tweet" class="u-full-width"></textarea>
+                            <input type="submit" class="button u-full-width button-primary" value="Agregar">
+                    </form>
+                </div>
+                <div class="six columns">
+                    <h2>Mis Tweets</h2>
+                    <div id="lista-tweets"></div>
+                </div>
+            </div>
 
+        </div>
+    </div> <!--#contenido-->
+
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
